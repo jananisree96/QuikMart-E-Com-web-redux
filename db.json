@@ -1,5 +1,34 @@
-<<<<<<< HEAD
-Your changes
-=======
-Changes from the remote branch
->>>>>>> commit-hash
+{
+  "products": [
+    {
+      "id": 107,
+      "title": "Beats Flex Wireless Earphones",
+      "price": 49.99,
+      "quantity": 1,
+      "total": 49.99,
+      "discountPercentage": 8.79,
+      "discountedTotal": 45.6,
+      "stock": 94
+    },
+    {
+      "id": 193,
+      "title": "Watch Gold for Women",
+      "price": 799.99,
+      "quantity": 3,
+      "total": 2399.97,
+      "discountPercentage": 19.53,
+      "discountedTotal": 1931.26,
+      "stock": 50
+    },
+    {
+      "id": 100,
+      "title": "Apple Airpods",
+      "price": 129.99,
+      "quantity": 3,
+      "total": 389.97,
+      "discountPercentage": 12.84,
+      "discountedTotal": 339.9,
+      "stock": 0
+    }
+  ]
+}
