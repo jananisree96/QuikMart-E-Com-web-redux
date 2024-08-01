@@ -614,5 +614,16 @@ export const ProductList = [
         "discountedTotal": 252.2,
         "stock": 50,
         "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20K1/thumbnail.png"
+      },
+      {
+        "id": 127,
+        "title": "Oppo K5",
+        "price": 299.99,
+        "quantity": 1,
+        "total": 299.99,
+        "discountPercentage": 15.93,
+        "discountedTotal": 252.2,
+        "stock": 5,
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20K1/thumbnail.png"
       }
 ];
