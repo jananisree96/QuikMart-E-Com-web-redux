@@ -1,8 +1,23 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useGetDataQuery } from "../service/api";
 
 function ProductCard(props) {
     const navigate = useNavigate();
+     const { data, error, isLoading } = useGetDataQuery();
+
+      if (isLoading) {
+        console.log("Loading data...");
+        return <div>Loading...</div>;
+      }
+
+      if (error) {
+        console.error("Error loading data:", error);
+        return <div>Error loading data</div>;
+      }
+
+     
+      console.log("Fetched data:", data);
   return (
     <div className='card m-2 cursor-pointer' style={{width:300}} role='button' onClick={() => navigate(`/product/${props.id}`)}  >
         <div className='mt-2'>

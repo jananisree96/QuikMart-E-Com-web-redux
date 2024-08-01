@@ -121,7 +121,7 @@ const CreateProduct = () => {
           <Form.Item
             label="Thumbnail"
             name="thumbnail"
-            rules={[{ required: true, message: "Please upload a thumbnail!" }]}
+            // rules={[{ required: true, message: "Please upload a thumbnail!" }]}
           >
             <Upload
               name="thumbnail"
