@@ -20,6 +20,7 @@ function Home() {
                     <Route path=':id' element={<Checkout />} />
                 </Route>   
                 <Route path='/success' element={<Success/>}/> 
+               
             </Routes>
         </div>
     )
