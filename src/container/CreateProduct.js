@@ -6,31 +6,30 @@ import {
   Button,
   Row,
   Col,
-  Upload,
   message,
 } from "antd";
-import { UploadOutlined } from "@ant-design/icons";
 
+import { useAddProductMutation } from "../service/api";
 
 const CreateProduct = () => {
+  const [form] = Form.useForm();
+  const [addProduct] = useAddProductMutation();
 
-
-
-  const onFinish = (values) => {
-    console.log("Form values:", values);
-  };
-
-
-  const handleUploadChange = (info) => {
-    if (info.file.status === "done") {
-      message.success(`${info.file.name} file uploaded successfully`);
-    } else if (info.file.status === "error") {
-      message.error(`${info.file.name} file upload failed.`);
+  const onFinish = async (values) => {
+    try {
+      await addProduct(values).unwrap();
+      message.success("Product added successfully!");
+      form.resetFields(); 
+    } catch (error) {
+      message.error("Failed to add product.");
     }
   };
 
+
+
   return (
     <Form
+      form={form} 
       layout="vertical"
       onFinish={onFinish}
       style={{ maxWidth: 800, margin: "0 auto" }}
@@ -115,29 +114,6 @@ const CreateProduct = () => {
             rules={[{ required: true, message: "Please enter the stock!" }]}
           >
             <InputNumber min={0} style={{ width: "100%" }} />
-          </Form.Item>
-        </Col>
-        <Col span={12}>
-          <Form.Item
-            label="Thumbnail"
-            name="thumbnail"
-            // rules={[{ required: true, message: "Please upload a thumbnail!" }]}
-          >
-            <Upload
-              name="thumbnail"
-              listType="picture"
-              className="upload-list-inline"
-              showUploadList={false}
-              customRequest={({ file, onSuccess }) => {
-              
-                setTimeout(() => {
-                  onSuccess("ok");
-                }, 1000);
-              }}
-              onChange={handleUploadChange}
-            >
-              <Button icon={<UploadOutlined />}>Upload Thumbnail</Button>
-            </Upload>
           </Form.Item>
         </Col>
       </Row>

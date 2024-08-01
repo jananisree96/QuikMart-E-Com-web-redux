@@ -26,7 +26,7 @@ function ProductList() {
           className="card m-2 cursor-pointer"
           style={{ width: 300 }}
           role="button"
-          onClick={() => navigate(`/product/${product.id}`)}
+        //   onClick={() => navigate(`/product/${product.id}`)}
         >
           <div className="mt-2">
             <img

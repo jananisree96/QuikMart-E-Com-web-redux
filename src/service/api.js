@@ -5,13 +5,16 @@ export const addApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3005/" }),
   endpoints: (builder) => ({
     getData: builder.query({
-      query: () => "products", 
+      query: () => "products",
     }),
-    getProductById: builder.query({
-      query: (id) => `products/${id}`,
+    addProduct: builder.mutation({
+      query: (newProduct) => ({
+        url: "products",
+        method: "POST",
+        body: newProduct,
+      }),
     }),
   }),
 });
 
-
-export const { useGetDataQuery } = addApi;
+export const { useGetDataQuery, useAddProductMutation } = addApi;
