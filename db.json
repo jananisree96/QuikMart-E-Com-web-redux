@@ -29,36 +29,6 @@
       "discountPercentage": 12.84,
       "discountedTotal": 339.9,
       "stock": 0
-    },
-    {
-      "id": "386a",
-      "title": "Stephen",
-      "price": 12,
-      "quantity": 2,
-      "total": 233,
-      "discountPercentage": 12,
-      "discountedTotal": 32,
-      "stock": 453
-    },
-    {
-      "id": "b01b",
-      "title": "Shree",
-      "price": 123,
-      "quantity": 323,
-      "total": 323,
-      "discountPercentage": 21,
-      "discountedTotal": 33,
-      "stock": 323
-    },
-    {
-      "id": "868c",
-      "title": "ebin",
-      "price": 32,
-      "quantity": 23,
-      "total": 23,
-      "discountPercentage": 2,
-      "discountedTotal": 3,
-      "stock": 234
     }
   ]
 }

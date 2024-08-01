@@ -3,6 +3,7 @@ import { Layout } from "antd";
 import Sidebar from "./Sidebar";
 import Overview from "./OverView";
 import CreateProduct from "./CreateProduct";
+import DeleteProductCard from "./DeleteProducts";
 
 const { Header, Sider, Content } = Layout;
 
@@ -15,6 +16,9 @@ const AdminAccount = () => {
         return <Overview />;
       case "Create":
         return <CreateProduct />;
+      case "Delete":
+        return <DeleteProductCard/>;
+     
       default:
         return <div>Content Not Found</div>;
     }
