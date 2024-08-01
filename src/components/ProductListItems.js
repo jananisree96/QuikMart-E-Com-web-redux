@@ -3,7 +3,7 @@ import { useGetDataQuery } from "../service/api";
 import ProductListItems from "./ProductListItems";
 
 function ProductList() {
-  const { data: product, error, isLoading } = useGetDataQuery();
+  const { data: product } = useGetDataQuery();
 
 
   return (
