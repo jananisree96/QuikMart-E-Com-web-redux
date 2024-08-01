@@ -22,6 +22,13 @@ export const addApi = createApi({
         method: "DELETE",
       }),
     }),
+    updateProduct: builder.mutation({
+      query: ({ id, ...updatedData }) => ({
+        url: `data/${id}`,
+        method: "PUT",
+        body: updatedData,
+      }),
+    }),
   }),
 });
 
@@ -29,4 +36,5 @@ export const {
   useGetDataQuery,
   useAddProductMutation,
   useDeleteProductMutation,
+  useUpdateProductMutation,
 } = addApi;
