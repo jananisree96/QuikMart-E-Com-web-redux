@@ -29,87 +29,10 @@
         "discountPercentage": 12.84,
         "discountedTotal": 339.9,
         "stock": 0
-      },
-      {
-        "id": 127,
-        "title": "Oppo K1",
-        "price": 299.99,
-        "quantity": 4,
-        "total": 1199.96,
-        "discountPercentage": 15.93,
-        "discountedTotal": 1008.81,
-        "stock": 10
-      },
-      {
-        "id": 2,
-        "title": "Eyeshadow Palette with Mirror",
-        "price": 19.99,
-        "quantity": 2,
-        "total": 39.98,
-        "discountPercentage": 0.7,
-        "discountedTotal": 39.7,
-        "stock": 20
-      },
-      {
-        "id": 20,
-        "title": "Cooking Oil",
-        "price": 4.99,
-        "quantity": 5,
-        "total": 24.95,
-        "discountPercentage": 12.62,
-        "discountedTotal": 21.8,
-        "stock": 0
-      },
-      {
-        "id": 154,
-        "title": "Black Sun Glasses",
-        "price": 29.99,
-        "quantity": 3,
-        "total": 89.97,
-        "discountPercentage": 1.11,
-        "discountedTotal": 88.97,
-        "stock": 10
-      },
-      {
-        "id": 44,
-        "title": "Family Tree Photo Frame",
-        "price": 29.99,
-        "quantity": 2,
-        "total": 59.98,
-        "discountPercentage": 10.68,
-        "discountedTotal": 53.57,
-        "stock": 10
-      },
-      {
-        "id": 5,
-        "title": "Red Nail Polish",
-        "price": 8.99,
-        "quantity": 5,
-        "total": 44.95,
-        "discountPercentage": 3.76,
-        "discountedTotal": 43.26,
-        "stock": 10
-      },
-      {
-        "id": 168,
-        "title": "Charger SXT RWD",
-        "price": 32999.99,
-        "quantity": 3,
-        "total": 98999.97,
-        "discountPercentage": 13.39,
-        "discountedTotal": 85743.87,
-        "stock": 10
-      },
-      {
-        "id": 129,
-        "title": "Realme X",
-        "price": 299.99,
-        "quantity": 2,
-        "total": 599.98,
-        "discountPercentage": 10.13,
-        "discountedTotal": 539.2,
-        "stock":0
       }
+      
+    
+
     ]
   }
   

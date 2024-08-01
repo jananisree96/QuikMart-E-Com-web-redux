@@ -5,10 +5,13 @@ export const addApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3005/" }),
   endpoints: (builder) => ({
     getData: builder.query({
-      query: () => "products", // Simplified URL query
+      query: () => "products", 
+    }),
+    getProductById: builder.query({
+      query: (id) => `products/${id}`,
     }),
   }),
 });
 
-// Export the auto-generated hook for the `getData` query
+
 export const { useGetDataQuery } = addApi;
