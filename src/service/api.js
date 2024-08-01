@@ -2,7 +2,9 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const addApi = createApi({
   reducerPath: "api",
-  baseQuery: fetchBaseQuery({ baseUrl: "https://66ab0aaa636a4840d7c92580.mockapi.io/" }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://66ab0aaa636a4840d7c92580.mockapi.io/",
+  }),
   endpoints: (builder) => ({
     getData: builder.query({
       query: () => "data",
@@ -14,7 +16,17 @@ export const addApi = createApi({
         body: newProduct,
       }),
     }),
+    deleteProduct: builder.mutation({
+      query: (id) => ({
+        url: `data/${id}`,
+        method: "DELETE",
+      }),
+    }),
   }),
 });
 
-export const { useGetDataQuery, useAddProductMutation } = addApi;
+export const {
+  useGetDataQuery,
+  useAddProductMutation,
+  useDeleteProductMutation,
+} = addApi;

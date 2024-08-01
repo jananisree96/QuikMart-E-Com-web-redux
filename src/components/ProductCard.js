@@ -1,9 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { useGetDataQuery } from "../service/api";
 
 function ProductList() {
-  const navigate = useNavigate();
   const { data: products, error, isLoading } = useGetDataQuery();
 
   if (isLoading) {
