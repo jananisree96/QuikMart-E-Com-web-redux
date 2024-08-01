@@ -49,6 +49,16 @@
       "discountPercentage": 21,
       "discountedTotal": 33,
       "stock": 323
+    },
+    {
+      "id": "868c",
+      "title": "ebin",
+      "price": 32,
+      "quantity": 23,
+      "total": 23,
+      "discountPercentage": 2,
+      "discountedTotal": 3,
+      "stock": 234
     }
   ]
 }

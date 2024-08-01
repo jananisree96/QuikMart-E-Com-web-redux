@@ -1,6 +1,11 @@
 import React from "react";
 import { Layout, Menu } from "antd";
-import { PlusOutlined, DashboardOutlined } from "@ant-design/icons";
+import {
+  PlusOutlined,
+  DashboardOutlined,
+  DeleteOutlined,
+  EditOutlined,
+} from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 
 const { Sider } = Layout;
@@ -20,12 +25,9 @@ const menuStyle = {
 };
 
 function Sidebar({ setActiveComponent }) {
-
-
   const handleMenuClick = (key) => {
     setActiveComponent(key);
     console.log("Clicked on menu item:", key);
-  
   };
 
   return (
@@ -44,6 +46,20 @@ function Sidebar({ setActiveComponent }) {
           onClick={() => handleMenuClick("Create")}
         >
           Create Product
+        </Menu.Item>
+        <Menu.Item
+          key="Update"
+          icon={<EditOutlined />}
+          onClick={() => handleMenuClick("Update")}
+        >
+          Update Product
+        </Menu.Item>
+        <Menu.Item
+          key="Delete"
+          icon={<DeleteOutlined />}
+          onClick={() => handleMenuClick("Delete")}
+        >
+          Delete Product
         </Menu.Item>
       </Menu>
     </Sider>

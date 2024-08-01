@@ -24,16 +24,16 @@ function ProductList() {
         <div
           key={product.id}
           className="card m-2 cursor-pointer"
-          style={{ width: 300 }}
+          style={{ width: 200}}
           role="button"
-        //   onClick={() => navigate(`/product/${product.id}`)}
+          //   onClick={() => navigate(`/product/${product.id}`)}
         >
           <div className="mt-2">
             <img
-              src={product.thumbnail}
-              height={150}
-              width={180}
-              alt={product.title}
+              src="https://via.placeholder.com/200"
+              height={100}
+              width={100}
+              alt="Placeholder"
               className="border-radius"
             />
           </div>
