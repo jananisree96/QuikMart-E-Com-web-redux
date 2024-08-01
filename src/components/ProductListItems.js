@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProductListItems(props) {
+function ProductListItems() {
     return (
         <div className='d-flex m-4 align-items-center justify-content-center' >
 
